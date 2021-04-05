@@ -1,0 +1,11 @@
+.Navbar {
+    height: 500px;
+    width: 250px;
+    background-color: cadetblue;
+    margin-top: 10px;
+}
+.item {
+    font-size: 30px;
+    padding-left: 10px;
+    color: cornsilk;
+}
