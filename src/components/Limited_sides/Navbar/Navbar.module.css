@@ -1,11 +1,27 @@
 .Navbar {
     height: 500px;
     width: 250px;
-    background-color: cadetblue;
+    /*background-color: cadetblue;*/
+    background-color: #397a98;
     margin-top: 10px;
 }
 .item {
     font-size: 30px;
     padding-left: 10px;
-    color: cornsilk;
+
+
+}
+.item a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.item a:active {
+    color: wheat;
+}
+.item a:hover {
+    text-decoration: underline;
+}
+.item a.activeLink {
+    color: black;
+    text-decoration: none;
 }

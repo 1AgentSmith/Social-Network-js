@@ -1,0 +1,30 @@
+.Dialogs {
+    display: flex;
+}
+
+.Messages {
+    margin-left: 10%;
+    padding: 10px;
+}
+
+.Dialog_items {
+    padding: 10px;
+}
+.active a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+a.activeLink {
+    color: black;
+    text-decoration: none;
+}
+a:active {
+    color: wheat;
+
+}
+a:hover {
+    text-decoration: underline;
+}
+a.activeLink:hover {
+    text-decoration: none;
+}

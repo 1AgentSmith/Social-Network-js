@@ -4,7 +4,7 @@ import {BrowserRouter, Route} from "react-router-dom";
 import Header from "./Header/Header";
 import Profile from "./Profile/Profile";
 import Navbar from "./Navbar/Navbar";
-import Messages from "./Messages/Messages";
+import Dialogs from "./Dialogs/Dialogs";
 import News from "./News/News";
 import Music from "./Music/Music";
 import Settings from "./Settings/Settings";
@@ -17,7 +17,7 @@ const Limited_sides = () => {
                 <Navbar/>
                 <div className='main_content'>
                     <Route path='/profile' component={Profile}/>
-                    <Route path='/messages' component={Messages}/>
+                    <Route path='/dialogs' component={Dialogs}/>
                     <Route path='/news' component={News}/>
                     <Route path='/music' component={Music}/>
                     <Route path='/settings' component={Settings}/>
