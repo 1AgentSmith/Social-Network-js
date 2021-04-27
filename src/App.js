@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import Limited_sides from "./components/Limited_sides/Limited_sides";
 
 
-function App() {
+function App(props) {
   return (
     <div className='main'>
-        <Limited_sides/>
+        <Limited_sides postData={props.postData} DialogData={props.DialogData} MessagesData={props.MessagesData}/>
     </div>
   );
 }

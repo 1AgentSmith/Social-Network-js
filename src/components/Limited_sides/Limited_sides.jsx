@@ -9,18 +9,18 @@ import News from "./News/News";
 import Music from "./Music/Music";
 import Settings from "./Settings/Settings";
 
-const Limited_sides = () => {
+const Limited_sides = (props) => {
     return (
         <BrowserRouter>
             <div className='Limited_sides'>
                 <Header/>
                 <Navbar/>
                 <div className='main_content'>
-                    <Route path='/profile' component={Profile}/>
-                    <Route path='/dialogs' component={Dialogs}/>
-                    <Route path='/news' component={News}/>
-                    <Route path='/music' component={Music}/>
-                    <Route path='/settings' component={Settings}/>
+                    <Route path='/profile' render={ () => <Profile postData={props.postData}/>}/>
+                    <Route path='/dialogs' render={ () => <Dialogs DialogData={props.DialogData} MessagesData={props.MessagesData}/>}/>
+                    <Route path='/news' render={ () => <News/>}/>
+                    <Route path='/music' render={ () => <Music/>}/>
+                    <Route path='/settings' render={ () => <Settings/>}/>
                 </div>
             </div>
         </BrowserRouter>
