@@ -1,12 +1,18 @@
 .Dialogs {
     display: flex;
 }
-
 .Messages {
-    margin-left: 10%;
     padding: 10px;
 }
-
+.Dialog {
+    width: 250px;
+}
+.Dialog img {
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
 .Dialog_items {
     padding: 10px;
 }
